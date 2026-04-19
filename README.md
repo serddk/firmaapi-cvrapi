@@ -210,15 +210,7 @@ Læs mere: [npm-pakke](https://www.npmjs.com/package/firmaapi-mcp-server) · [MC
 
 ## Priser
 
-| Plan | Pris | Requests/md | Rate limit |
-|------|------|-------------|------------|
-| **Gratis** | 0 kr | 1.000 | 2 req/s |
-| **Basis** | 79 kr | 50.000 | 5 req/s |
-| **Standard** | 299 kr | 150.000 | 10 req/s |
-| **Professionel** | 899 kr | 500.000 | 20 req/s |
-| **Enterprise** | Efter aftale | 1.000.000+ | 50 req/s |
-
-Se alle features per plan på [firmaapi.dk/priser](https://firmaapi.dk/priser).
+Se aktuelle planer, priser og features på [firmaapi.dk/priser](https://firmaapi.dk/priser).
 
 ## Links
 
