@@ -1,13 +1,28 @@
 {
   "name": "firmaapi",
+  "displayName": "FirmaAPI",
   "version": "1.0.0",
-  "description": "Danske virksomhedsdata fra CVR-registret i Claude: stamdata, regnskaber, ejere, ledelse og personer. Log ind med din FirmaAPI-konto, ingen API-nøgle at kopiere.",
+  "description": "Danish company data from the CVR register in Claude: master data, financials, owners, management and people. Sign in with your FirmaAPI account, no API key to copy.",
   "author": {
     "name": "FirmaAPI",
+    "email": "kontakt@firmaapi.dk",
     "url": "https://firmaapi.dk"
   },
   "homepage": "https://firmaapi.dk/mcp",
   "repository": "https://github.com/serddk/firmaapi-cvrapi",
   "license": "MIT",
-  "keywords": ["cvr", "danmark", "virksomhedsdata", "regnskaber", "ejere", "leads", "mcp"]
+  "keywords": [
+    "cvr",
+    "danmark",
+    "virksomhedsdata",
+    "regnskaber",
+    "ejere",
+    "leads",
+    "mcp"
+  ],
+  "icon": "./icon.svg",
+  "documentationUrl": "https://firmaapi.dk/mcp",
+  "supportUrl": "https://firmaapi.dk/faq",
+  "privacyPolicyUrl": "https://firmaapi.dk/privatlivspolitik",
+  "termsOfServiceUrl": "https://firmaapi.dk/vilkaar"
 }

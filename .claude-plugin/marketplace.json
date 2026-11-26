@@ -5,13 +5,13 @@
     "url": "https://firmaapi.dk"
   },
   "metadata": {
-    "description": "Danske virksomhedsdata fra CVR-registret til Claude."
+    "description": "Danish company data from the CVR register for Claude."
   },
   "plugins": [
     {
       "name": "firmaapi",
       "source": "./plugins/firmaapi",
-      "description": "Danske virksomhedsdata fra CVR-registret i Claude: stamdata, regnskaber, ejere, ledelse og personer. Log ind med din FirmaAPI-konto, ingen API-nøgle at kopiere.",
+      "description": "Danish company data from the CVR register in Claude: master data, financials, owners, management and people. Sign in with your FirmaAPI account, no API key to copy.",
       "homepage": "https://firmaapi.dk/mcp",
       "license": "MIT",
       "keywords": [
