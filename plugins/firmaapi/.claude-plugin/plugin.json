@@ -1,0 +1,13 @@
+{
+  "name": "firmaapi",
+  "version": "1.0.0",
+  "description": "Danske virksomhedsdata fra CVR-registret i Claude: stamdata, regnskaber, ejere, ledelse og personer. Log ind med din FirmaAPI-konto, ingen API-nøgle at kopiere.",
+  "author": {
+    "name": "FirmaAPI",
+    "url": "https://firmaapi.dk"
+  },
+  "homepage": "https://firmaapi.dk/mcp",
+  "repository": "https://github.com/serddk/firmaapi-cvrapi",
+  "license": "MIT",
+  "keywords": ["cvr", "danmark", "virksomhedsdata", "regnskaber", "ejere", "leads", "mcp"]
+}

@@ -4,9 +4,44 @@ Giv din AI-assistent direkte adgang til dansk virksomhedsdata fra [FirmaAPI](htt
 
 MCP-serveren lader AI-assistenter som Claude Desktop, Claude Code og Cursor slå virksomheder op, søge i CVR-registret, hente regnskaber, finde ejere og meget mere — uden at du selv skal skrive API-kald.
 
+## Hurtigst: log ind, ingen API-nøgle
+
+MCP-serveren kører hostet på `https://firmaapi.dk/mcp`. Tilføj adressen som connector i din AI-klient og log ind med din FirmaAPI-konto. Der er intet at installere, og kaldene bruger din plan og kvote som ellers.
+
+**Claude (web, computer og mobil):** Settings, Connectors, Add custom connector. Indsæt `https://firmaapi.dk/mcp` og klik Connect.
+
+**Claude Code:**
+
+```bash
+claude mcp add --transport http firmaapi https://firmaapi.dk/mcp
+```
+
+Skriv derefter `/mcp` i Claude Code og log ind.
+
+**Claude Code som plugin** (connector og tre skills i ét):
+
+```
+/plugin marketplace add serddk/firmaapi-cvrapi
+/plugin install firmaapi@firmaapi
+```
+
+**Cursor:** tilføj til `.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "firmaapi": { "url": "https://firmaapi.dk/mcp" }
+  }
+}
+```
+
+Forbundne apps kan du se og fjerne i dit [dashboard](https://firmaapi.dk/dashboard). Flere klienter: [firmaapi.dk/mcp](https://firmaapi.dk/mcp#installation).
+
+Resten af guiden beskriver den lokale server med API-nøgle, til scripts, servere og klienter uden login.
+
 ## Forudsætninger
 
-- **Node.js 18+** installeret
+- **Node.js 20+** installeret
 - En **FirmaAPI API-nøgle** — [opret gratis konto](https://firmaapi.dk/register)
 
 ## Installation

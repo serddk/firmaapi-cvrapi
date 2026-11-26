@@ -199,12 +199,24 @@ Se webhook-dokumentation på [firmaapi.dk/dokumentation](https://firmaapi.dk/dok
 
 FirmaAPI har en officiel [MCP-server](https://firmaapi.dk/dokumentation) der giver AI-assistenter direkte adgang til CVR-data. Understøtter Claude Desktop, Claude Code, Cursor og andre MCP-kompatible klienter.
 
-Se den fulde [MCP-opsætningsguide](MCP.md) for installation og konfiguration.
+Hurtigst er den hostede server: tilføj `https://firmaapi.dk/mcp` som connector i din AI-klient og log ind med din FirmaAPI-konto. Ingen API-nøgle og ingen installation.
 
 ```bash
-# Hurtig installation
+# Claude Code
+claude mcp add --transport http firmaapi https://firmaapi.dk/mcp
+
+# Eller som plugin med connector og skills
+/plugin marketplace add serddk/firmaapi-cvrapi
+/plugin install firmaapi@firmaapi
+```
+
+Vil du hellere køre serveren lokalt med en API-nøgle:
+
+```bash
 npx firmaapi-mcp-server
 ```
+
+Se den fulde [MCP-opsætningsguide](MCP.md) for begge muligheder.
 
 Læs mere: [npm-pakke](https://www.npmjs.com/package/firmaapi-mcp-server) · [MCP-opsætningsguide](MCP.md)
 
